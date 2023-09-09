@@ -1,0 +1,59 @@
+	This solution swash project syntactically parses a form from a text file onto a raw binary file .
+
+	The parse notation syntax is as follows:
+
+		(.) <header::fh><<46>> (,)
+
+		[content::fc]
+
+		<local-line::fl><<46>>
+
+		<global-line::fg><<44>>
+	
+		(.....)
+
+	Where:
+
+		() stands for REQUIRED .
+
+		[] stands for OPTIONAL .
+
+		([]) stands for ANY .
+
+		[()] stands for SOME .
+
+		<> stands for SEQUENCE .
+
+		<<>> stands for SEQUENCER .
+
+		{} stands for EXTERNAL SENTENCE .
+
+		{}{{}} stands for EXTERNAL PARAGRAPH .
+
+	The final output raw binary has a header of 8 item(s) .
+
+		~ EndianFormat
+
+		~ StringCodec
+
+		~ ChunkSize
+
+		~ StartBoundary
+
+		~ HeaderAddress
+
+		~ ContentAddress
+
+		~ LocalLineAddress
+
+		~ GlobalLineAddress
+
+	The final output raw binary has body of 4 item(s)
+
+		~ HeaderArray
+
+		~ ContentString
+
+		~ LocalLineArray
+
+		~ GlobalLineArray
