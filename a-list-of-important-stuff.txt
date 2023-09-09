@@ -1,0 +1,31 @@
+`ProgramOneFirstEstelScript` https://github.com/segmentar/program-one-first-estel-script
+
+	This solution swash project syntactically parses a form from a text file onto a raw binary file .
+
+	(.) <header::fh><<46>> (,)
+
+	[content::fc]
+
+	<local-line::fl><<46>>
+
+	<global-line::fg><<44>>
+
+	(.....)
+
+	The final output raw binary has a header of 8 item(s) .
+
+	~ EndianFormat
+
+	~ StringCodec
+
+	~ ChunkSize
+
+	~ StartBoundary
+
+	~ HeaderAddress
+
+	~ ContentAddress
+
+	~ LocalLineAddress
+
+	~ GlobalLineAddress
